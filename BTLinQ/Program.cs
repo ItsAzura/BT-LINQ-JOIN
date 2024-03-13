@@ -42,7 +42,7 @@ class Program
         Console.WriteLine("\nDanh sach sinh vien co diem trung binh lon hon 7.0:\n");
         foreach (var sv in dsSinhVienDiemTBLonHon7)
         {
-            Console.WriteLine($"Khoa: {sv.TenKhoa}, Sinh vien: {sv.TenSinhVien}, Diem trung binh: {sv.DiemTrungBinh}");
+            Console.WriteLine($"Sinh vien: {sv.TenSinhVien},Ten Khoa: {sv.TenKhoa}, Diem trung binh: {sv.DiemTrungBinh}");
         }
 
         // Danh sách sinh viên có điểm trung bình bé hơn 4.0
@@ -54,7 +54,7 @@ class Program
         Console.WriteLine("\nDanh sach sinh viên co diem trung binh bé hơn 7.0:\n");
         foreach (var sv in dsSinhVienDiemTBNhoHon4)
         {
-            Console.WriteLine($"Ten Khoa: {sv.TenKhoa}, Sinh vien: {sv.TenSinhVien}, Diem trung binh: {sv.DiemTrungBinh}");
+            Console.WriteLine($"Sinh vien: {sv.TenSinhVien}, Ten Khoa: {sv.TenKhoa}, Diem trung binh: {sv.DiemTrungBinh}");
         }
 
         // Kiểm tra sinh viên nào có tên là "Khoa"
@@ -67,7 +67,7 @@ class Program
         Console.WriteLine("\nSinh vien co ten la 'Khoa': \n");
         foreach (var sv in svKhoa)
         {
-            Console.WriteLine($" Sinh vien: {sv.TenSinhVien}, Ten Khoa: {sv.TenKhoa}, Diem trung binh: {sv.DiemTrungBinh}");
+            Console.WriteLine($"Sinh vien: {sv.TenSinhVien}, Ten Khoa: {sv.TenKhoa}, Diem trung binh: {sv.DiemTrungBinh}");
         }
 
         // In danh sách sinh viên có thông tin khoa
