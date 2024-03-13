@@ -15,12 +15,14 @@ class Program
 
         danhSachKhoa[0].DanhSachSinhVien.Add(new SinhVien("Nguyen Van A", 8.5));
         danhSachKhoa[0].DanhSachSinhVien.Add(new SinhVien("Tran Van B", 2.5));
-        danhSachKhoa[0].DanhSachSinhVien.Add(new SinhVien("Le Thi C", 9.5));
+        danhSachKhoa[0].DanhSachSinhVien.Add(new SinhVien("Le Thi C", 9.0));
         danhSachKhoa[0].DanhSachSinhVien.Add(new SinhVien("Tran Van Khoa", 8.5));
+        danhSachKhoa[0].DanhSachSinhVien.Add(new SinhVien("Nguyen Van Khoa", 5.5));
         danhSachKhoa[1].DanhSachSinhVien.Add(new SinhVien("Pham Van D", 6.5));
         danhSachKhoa[1].DanhSachSinhVien.Add(new SinhVien("Hoang Thi E", 3.5));
         danhSachKhoa[1].DanhSachSinhVien.Add(new SinhVien("Nguyen Van F", 7.5));
         danhSachKhoa[1].DanhSachSinhVien.Add(new SinhVien("Le Van Khoa", 2.5));
+        danhSachKhoa[1].DanhSachSinhVien.Add(new SinhVien("Nguyen Ba Khoa", 9.5));
 
         // Danh sách sinh viên theo khoa, sắp xếp theo tên
         var dsSinhVienTheoKhoa = from khoa in danhSachKhoa
@@ -58,7 +60,6 @@ class Program
         }
 
         // Kiểm tra sinh viên nào có tên là "Khoa"
-
         var svKhoa = from khoa in danhSachKhoa
                      from sv in khoa.DanhSachSinhVien
                      where sv.Ten.Contains("Khoa")
